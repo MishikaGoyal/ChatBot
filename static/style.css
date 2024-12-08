@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Chat Header */
+.chat-header {
+    width: 100%;
+    text-align: center;
+    background-color: #0078d4;
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Chat Box */
+.chat-box {
+    width: 100%;
+    max-width: 600px;
+    height: 60vh;
+    overflow-y: auto;
+    background: white;
+    border: 2px solid #0078d4;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Messages */
+.chat-box .message {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.chat-box .message.user {
+    justify-content: flex-end;
+}
+
+.chat-box .message.user p {
+    background-color: #0078d4;
+    color: white;
+}
+
+.chat-box .message.bot p {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.chat-box .message p {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+
+/* Chat Input */
+.chat-input {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #0078d4;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 10px 15px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-box {
+        height: 50vh;
+    }
+
+    .chat-input {
+        flex-direction: column;
+    }
+
+    .chat-input input,
+    .chat-input button {
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+}
