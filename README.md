@@ -9,8 +9,8 @@ This is an AI-powered chatbot built using **Natural Language Processing (NLP)** 
 - Lightweight web-based frontend powered by Flask.
 
 ## Directory Structure
+chatbot_project/ ├── app.py # Backend logic ├── intents.json # Dataset of intents ├── model/ │ ├── chatbot_model.h5 # Trained model │ ├── class_names.npy # Encoded class 
 chatbot_project/ ├── app.py # Backend logic ├── intents.json # Dataset of intents ├── model/ │ ├── chatbot_model.h5 # Trained model │ ├── class_names.npy # Encoded class labels │ ├── training_labels.npy # Training labels ├── templates/ │ └── index.html # Web UI for chatbot ├── static/ │ └── style.css # Optional styling for the frontend ├── README.md # Project details ├── requirements.txt # Dependencies
-
 
 ## Setup Instructions
 1. Clone the repository.
